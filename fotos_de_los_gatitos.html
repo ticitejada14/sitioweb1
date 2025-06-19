@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>El Retiro del Gato</title>
+        <link href="css/estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"/>
+    </head>
+    <body>
+        <header class="encabezado">
+        <div class="logoytitulo">
+            <img src="imagenes/logo.png" alt="Logo" class="logo">
+            <h1 class="titulo">El Retiro del Gato</h1>
+        </div>
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                ☰
+            </label>
+            <nav class="menu">
+         
+                <ul class="menu1">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="requisitos.html">Requisitos</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="cuidadores.html">Cuidadores</a></li>
+                    <li><a href="fotos_de_los_gatitos.html"class="active">Fotos de los gatitos</a></li>
+                    <li><a href="reservaciones.html">Reservaciones</a></li>
+                </ul>
+            
+         </nav>
+        </header>
+        <main>
+            <h2>Fotos de los Gatitos</h2>
+
+            <h3>Destacados del mes</h3>
+
+        <section id="destacados" class="secciondestacados">
+                
+        <div class="framefotos1">
+          
+                <img src="imagenes/gatitos.jpg" alt="Palta" class="fotosimg"> 
+                <img src="imagenes/gatitos.leon.jpg" alt="Leon" class="fotosimg">
+                <img src="imagenes/gatitos.manchi.jpg" alt="Manchi" class="fotosimg">
+           
+        </div>
+
+            <h3>Más fotos</h3>
+            <div class="framefotos2">
+
+                <img src="imagenes/gatitos.tiger.jpg" alt="Palta" class="fotosimg">
+                <img src="imagenes/gatitos.lucifer.jpg" alt="Lucifer" class="fotosimg">
+                <img src="imagenes/gatitos.masfotos.jpg" alt="Sol y Luna" class="fotosimg">
+                <img src="imagenes/gatitos.masfotos2.jpg" alt="Lucifer2" class="fotosimg">
+                <img src="imagenes/gatitos.masfotos3.jpg" alt="Hades" class="fotosimg">
+                <video controls width="600">
+                    <source src="imagenes/gatitos.video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>  
+            </div>
+        </section>
+          
+            <h3>Carga tu foto</h3>
+            <form action="subir_foto.php" method="post" enctype="multipart/form-data">
+                <label for="archivo" class="boton-cargar">Seleccionar foto</label>
+                <input type="file" id="archivo" name="archivo" accept="image/*" style="display: none;">
+                <button type="submit" class="boton-enviar">Subir foto</button>
+            </form>
+
+        </main>
+        <footer>
+         <div class="footerimg">
+            <a href="http://www.instagram.com"></a> 
+            <img src="imagenes/instagram-logo.webp" alt="logo de instagram">
+            
+            <a href="http://www.facebook.com"></a>
+            <img src="imagenes/facebook-logo.webp" alt="logo de facebook">
+            
+            <a href="http://www.whatsapp.com"></a>
+            <img src="imagenes/whatsapplogo.webp" alt="logo de whatsapp">
+            <p>Los contenidos publicados en estas páginas son en el marco de un trabajo práctico de la Universidad de Palermo. Los textos, logotipos, fotografías, tipografías, etc. pueden no ser de autoría propia y sólo son utilizados a los fines prácticos del ejercicio.</p>
+        </div>
+        </footer>
+    </body>
+    </html>
